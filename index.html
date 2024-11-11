@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story Project</title>
+
+    <!-- tailwindcss link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="h-[100vh] w-full flex justify-center items-center">
+    <div
+      id="box"
+      class="h-[550px] w-[350px] border-2 border-red-400 rounded-xl relative"
+    >
+      <div
+        id="fullScreen"
+        class="h-full w-full object-cover bg-center absolute hidden"
+      ></div>
+      <div
+        id="storyBox"
+        class="h-[150px] w-full border-b-2 border-red-400 rounded-tl-xl rounded-tr-xl p-[25px] whitespace-nowrap overflow-x-auto overflow-y-hidden no-scrollbar"
+      >
+        <!-- <div id="story" class="inline-block h-[100px] w-[100px]  rounded-[50%] border-[5px] border-double border-red-500 overflow-hidden"></div>
+            <div id="story" class="inline-block h-[100px] w-[100px]  rounded-[50%] border-[5px] border-double border-red-500 overflow-hidden"></div>
+            <div id="story" class="inline-block h-[100px] w-[100px]  rounded-[50%] border-[5px] border-double border-red-500 overflow-hidden"></div>
+            <div id="story" class="inline-block h-[100px] w-[100px]  rounded-[50%] border-[5px] border-double border-red-500 overflow-hidden"></div> -->
+      </div>
+
+      <h1 class="text-2xl font-bold text-red-400 text-center mt-8">
+        Story Box
+      </h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
